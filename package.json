@@ -1,0 +1,11 @@
+{
+    "name": "OneForAll-Support-Bot-V14",
+    "version": "1.0.0",
+    "description": "OneForAll-Support-Bot-V14",
+    "main": "index.js",
+    "dependencies": {
+        "discord.js": "^14.22.1",
+    },
+    "author": "Henelio",
+    "license": "MIT"
+}

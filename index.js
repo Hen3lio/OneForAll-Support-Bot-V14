@@ -58,7 +58,7 @@ client.on(Events.MessageCreate, async (message) => {
             .setTitle('OneForAll - Auto Support.')
             .setThumbnail('https://media.discordapp.net/attachments/891007917669625906/915679967197671504/OneForAll.png?width=580&height=580')
             .setDescription('**Sélectionnez votre question dans le menu ci-dessous**.\n\n1️⃣ Comment puis-je obtenir un bot perso ?\n2️⃣ Pourquoi OneForAll ne répond pas à !help ?\n3️⃣ Mon token est-il sécurisé ?\n4️⃣ Comment puis-je inviter le bot OneForAll ?\n5️⃣ Pourquoi le bot est dans les commandes slash ?\n6️⃣ Mon problème n\'est pas dans la liste')
-            .setColor('#2F3136');
+            .setColor(0x2F3136);
 
         await message.channel.send({ embeds: [embed], components: [row] });
     }
@@ -81,7 +81,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
                 break;
             
             case 'three':
-                response = `Bonjour <@${member.id}>, contrairement à **OneForAll V1.0** nous avons renforcé nos sécurité nous encryptons difficilement tout vos token de bot pour éviter tout risque.
+                response = `Bonjour <@${member.id}>, contrairement à **OneForAll V1.0** nous avons renforcé nos sécurité nous encryptons difficilement tout vos token de bot pour éviter tout risque.`;
                 break;
                 
             case 'four':

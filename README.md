@@ -1,5 +1,5 @@
 <h1 align="center">
-    🟢 OneForAll Support Bot - Is a support bot for the discord server of OFA!
+    🟢 OneForAll Support Bot V14 - Is a support bot for the discord server of OFA!
 </h1>
 
 <p align="center">

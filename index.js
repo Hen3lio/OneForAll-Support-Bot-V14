@@ -1,14 +1,9 @@
-const { Client, GatewayIntentBits, EmbedBuilder, ActionRowBuilder, StringSelectMenuBuilder, StringSelectMenuOptionBuilder } = require('discord.js');
+const { Client, Events, GatewayIntentBits, EmbedBuilder, ActionRowBuilder, StringSelectMenuBuilder, StringSelectMenuOptionBuilder } = require('discord.js');
 
 const client = new Client({ 
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent
-    ]
-});
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent ] });
 
-client.on('messageCreate', async (message) => {
+client.on(Events.MessageCreate, async (message) => {
     if (message.content.toLowerCase() == "menu") {
         if (message.author.id === client.user.id) return;
         
@@ -69,7 +64,7 @@ client.on('messageCreate', async (message) => {
     }
 });
 
-client.on('interactionCreate', async (interaction) => {
+client.on(Events.InteractionCreate, async (interaction) => {
     if (!interaction.isStringSelectMenu()) return;
     
     if (interaction.customId === 'select1') {
@@ -106,7 +101,7 @@ client.on('interactionCreate', async (interaction) => {
     }
 });
 
-client.on('clientReady', () => {
+client.on(Events.ClientReady, () => {
     console.log("Bot ready");
 });
 

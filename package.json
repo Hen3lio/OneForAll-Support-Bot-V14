@@ -4,7 +4,7 @@
     "description": "OneForAll-Support-Bot-V14",
     "main": "index.js",
     "dependencies": {
-        "discord.js": "^14.22.1",
+        "discord.js": "^14.22.1"
     },
     "author": "Henelio",
     "license": "MIT"
